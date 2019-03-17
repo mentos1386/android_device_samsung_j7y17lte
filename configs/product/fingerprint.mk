@@ -14,6 +14,10 @@
 # limitations under the License.
 #
 
-# Kernel
-TARGET_KERNEL_CONFIG := lineage-j7y17lte_defconfig
-TARGET_KERNEL_SOURCE := kernel/samsung/exynos7870
+# Fingerprint
+PRODUCT_PACKAGES += \
+    mcDriverDaemon \
+    fingerprint.exynos5 \
+    libbauthtzcommon_shim \
+    android.hardware.biometrics.fingerprint@2.1-impl \
+    android.hardware.biometrics.fingerprint@2.1-service
