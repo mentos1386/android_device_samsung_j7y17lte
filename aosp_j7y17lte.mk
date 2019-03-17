@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2017 The LineageOS Project
+# Copyright (C) 2017 The AEX Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -17,19 +17,18 @@
 # Inherit device configuration
 $(call inherit-product, device/samsung/j7y17lte/device.mk)
 
-# Inherit from those products. Most specific first
-$(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base_telephony.mk)
+TARGET_BOOT_ANIMATION_RES := 1080
 
-# Inherit some common LineageOS stuff
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+# Inherit some common AEX stuff
+$(call inherit-product, vendor/aosp/common.mk)
 
 # Device identifier
-PRODUCT_NAME := lineage_j7y17lte
+PRODUCT_NAME := aosp_j7y17lte
 PRODUCT_DEVICE := j7y17lte
 PRODUCT_BRAND := samsung
 PRODUCT_MANUFACTURER := samsung
 PRODUCT_GMS_CLIENTID_BASE := android-samsung
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    BUILD_FINGERPRINT=samsung/j7y17ltextc/j7y17lte:7.0/NRD90M/J730GMDXU3ARC3:user/release-keys
-    PRIVATE_BUILD_DESC="j7y17ltextc-user 7.0 NRD90M J730GMDXU3ARC3 release-keys"
+    BUILD_FINGERPRINT=samsung/j7y17ltexx/j7y17lte:8.1/NRD90M/J730FXXU2ARB2:user/release-keys
+    PRIVATE_BUILD_DESC="j7y17ltexx-user 8.1 NRD90M J730FXXU2ARB2 release-keys"

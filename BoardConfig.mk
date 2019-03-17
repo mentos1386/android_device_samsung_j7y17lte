@@ -30,6 +30,7 @@ TARGET_INIT_VENDOR_LIB := libinit_sec
 # SELinux
 BOARD_SEPOLICY_DIRS += device/samsung/j7y17lte/sepolicy
 
+
 # Properties
 TARGET_SYSTEM_PROP += $(LOCAL_PATH)/system.prop
 

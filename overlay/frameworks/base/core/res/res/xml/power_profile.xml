@@ -39,7 +39,7 @@
     <item name="cpu.awake">17.5</item>
     <array name="cpu.active">
         <value>100</value>
-	<value>93</value>
+	      <value>93</value>
         <value>87</value>
         <value>82</value>
         <value>78</value>
